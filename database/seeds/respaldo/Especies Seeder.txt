@@ -1,0 +1,143 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+
+//  ------------- DATOS PARA ESPECIES -------------
+
+        DB::table('especies')->insert([
+            'nombre' => 'Bulldozer',
+            'grupo_id' => 1,
+            'subgrupo_id' => 1,
+            'codigo' => '001',
+        ]);
+
+        DB::table('especies')->insert([
+            'nombre' => 'Cargador frontal',
+            'grupo_id' => 1,
+            'subgrupo_id' => 1,
+            'codigo' => '002',
+        ]);    
+
+        DB::table('especies')->insert([
+            'nombre' => 'Grúas',
+            'grupo_id' => 1,
+            'subgrupo_id' => 1,
+            'codigo' => '003',
+        ]);
+
+        DB::table('especies')->insert([
+            'nombre' => 'Motoniveladoras',
+            'grupo_id' => 1,
+            'subgrupo_id' => 1,
+            'codigo' => '004',
+        ]);
+            DB::table('especies')->insert([
+            'nombre' => 'Retroexcavadora',
+            'grupo_id' => 1,
+            'subgrupo_id' => 1,
+            'codigo' => '005',
+        ]);
+        DB::table('especies')->insert([
+            'nombre' => 'Rodillo Compactador',
+            'grupo_id' => 1,
+            'subgrupo_id' => 1,
+            'codigo' => '006',
+        ]);
+
+        DB::table('especies')->insert([
+            'nombre' => 'Camiones',
+            'grupo_id' => 1,
+            'subgrupo_id' => 1,
+            'codigo' => '007',
+        ]);
+
+        DB::table('especies')->insert([
+            'nombre' => 'Tractores',
+            'grupo_id' => 1,
+            'subgrupo_id' => 1,
+            'codigo' => '008',
+        ]);
+
+        // Especies para / Grupo 01 / Subgrupo 02
+
+        DB::table('especies')->insert([
+            'nombre' => 'Camionetas',
+            'grupo_id' => 1,
+            'subgrupo_id' => 2,
+            'codigo' => '001',
+        ]);
+        DB::table('especies')->insert([
+            'nombre' => 'Automóviles',
+            'grupo_id' => 1,
+            'subgrupo_id' => 2,
+            'codigo' => '002',
+        ]);
+        DB::table('especies')->insert([
+            'nombre' => 'Motocicletas',
+            'grupo_id' => 1,
+            'subgrupo_id' => 2,
+            'codigo' => '003',
+        ]);
+        DB::table('especies')->insert([
+            'nombre' => 'Bicicletas',
+            'grupo_id' => 1,
+            'subgrupo_id' => 2,
+            'codigo' => '004',
+        ]);
+            DB::table('especies')->insert([
+            'nombre' => 'Ambulancias',
+            'grupo_id' => 1,
+            'subgrupo_id' => 2,
+            'codigo' => '005',
+        ]);
+        DB::table('especies')->insert([
+            'nombre' => 'Jeep',
+            'grupo_id' => 1,
+            'subgrupo_id' => 2,
+            'codigo' => '006',
+        ]);
+        DB::table('especies')->insert([
+            'nombre' => 'Furgones',
+            'grupo_id' => 1,
+            'subgrupo_id' => 2,
+            'codigo' => '007',
+        ]);
+
+        // Especies para / Grupo 02 / Subgrupo 01
+
+        DB::table('especies')->insert([
+            'nombre' => 'Maquinas de escribir mecánicas',
+            'grupo_id' => 1,
+            'subgrupo_id' => 1,
+            'codigo' => '001',
+        ]);
+        DB::table('especies')->insert([
+            'nombre' => 'Maquinas de escribir electrónicas',
+            'grupo_id' => 2,
+            'subgrupo_id' => 1,
+            'codigo' => '002',
+        ]);
+        DB::table('especies')->insert([
+            'nombre' => 'Máquinas de calcular portatiles',
+            'grupo_id' => 2,
+            'subgrupo_id' => 1,
+            'codigo' => '003',
+        ]);
+        DB::table('especies')->insert([
+            'nombre' => 'Máquinas de calcular electrónicas',
+            'grupo_id' => 2,
+            'subgrupo_id' => 1,
+            'codigo' => '004',
+        ]);
+        DB::table('especies')->insert([
+            'nombre' => 'Máquinas Fotocopiadoras',
+            'grupo_id' => 2,
+            'subgrupo_id' => 1,
+            'codigo' => '005',        
+        ]);
+
+    }
+}

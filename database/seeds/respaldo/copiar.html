@@ -1,0 +1,40 @@
+<div class="panel-body">
+                    <form action="">   
+                        <div class="form-group">
+                            <label for="fechamovimiento">Fecha</label>
+                            <input class="form-control" type="date" placeholder="Date" name="fechadevolucion">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="grupo">Grupo</label>
+                            <input type="text" id="g" value="{{ old('grupo') }}">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="grupo">Subgrupo</label>
+                            <input type="text" id="s" value="{{ old('subgrupo') }}">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="grupo">Especie</label>
+                            <input type="text" id="e" value="{{ old('especie') }}">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="grupo">Ubicacion</label>
+                            <input type="text" id="u" value="{{ old('ubicacion') }}">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="grupo">Codificacion</label>
+                            <input type="text" id="codificacion" class="form-control">
+                        </div>
+
+
+                        
+                        <button class="btn btn-success" onclick="document.getElementById('codificacion').value = document.getElementById('g').value">Obtener codificacion</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>

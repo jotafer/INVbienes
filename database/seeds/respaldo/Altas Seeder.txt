@@ -1,0 +1,24 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+
+
+		//Subgrupos para vehículos
+		
+		DB::table('subgrupos')->insert([
+            'nombre' => 'Vehiculos Terrestres para Uso Productivo',
+            'grupo_id' => 1,
+            'codigo' => 1
+        ]);
+
+        DB::table('subgrupos')->insert([
+            'nombre' => 'Vehiculos Terrestres para uso administrativo',
+            'grupo_id' => 1,
+            'codigo' => 2
+        ]);
+
+    }
+}

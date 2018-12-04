@@ -1,0 +1,26 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+    /**
+     * $this->call(SubgruposTableSeeder::class);?
+     *
+     * @return void
+     */
+    public function run()
+    {
+
+        //  ------------- DATOS PARA UBICACIONES -------------
+        
+        DB::table('users')->insert([
+            'name' => 'admin1',
+            'email' => 'admin1n@gmail.com',
+            'password' => bcrypt('741adm741'),
+            'role' => 0
+        ]);
+            
+       
+    }
+}

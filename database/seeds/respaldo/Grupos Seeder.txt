@@ -1,0 +1,44 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+        DB::table('grupos')->insert([
+            'nombre' => 'Vehiculos',
+            'codigo' => 01,
+        ]);
+
+        DB::table('grupos')->insert([
+            'nombre' => 'Maquinas y equipos',
+            'codigo' => 02,
+        ]);
+
+        DB::table('grupos')->insert([
+            'nombre' => 'Muebles y enseres',
+            'codigo' => 03,
+        ]);
+
+        DB::table('grupos')->insert([
+            'nombre' => 'Obras de arte',
+            'codigo' => 04,
+        ]);
+
+        DB::table('grupos')->insert([
+            'nombre' => 'Implementos de cocina y vajilleria',
+            'codigo' => 05,
+        ]);
+
+        DB::table('grupos')->insert([
+            'nombre' => 'Ganado',
+            'codigo' => 06,
+        ]);
+
+        DB::table('grupos')->insert([
+            'nombre' => 'Bibliotecas',
+            'codigo' => 07,
+        ]);
+
+
+    }
+}

@@ -1,0 +1,48 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+    /**
+     * $this->call(SubgruposTableSeeder::class);?
+     *
+     * @return void
+     */
+    public function run()
+    {
+
+        //  ------------- DATOS PARA UBICACIONES -------------
+        
+        DB::table('ubicacions')->insert([   
+            'dependenciamunicipal' => 'Gabinete de Alcaldía',
+            'codigo' => 01,
+        ]);
+
+        DB::table('ubicacions')->insert([ 
+            'dependenciamunicipal' => 'Extension Cultural y turismo',
+            'codigo' => 02,
+        ]);
+
+        DB::table('ubicacions')->insert([    
+            'dependenciamunicipal' => 'Secretaria Municipal',
+            'codigo' => 03,
+        ]);
+
+        DB::table('ubicacions')->insert([ 
+            'dependenciamunicipal' => 'Oficina de partes y Archivos',
+            'codigo' => 04,
+        ]);
+
+        DB::table('ubicacions')->insert([     
+            'dependenciamunicipal' => 'Oficina de Decretos y Transcripciones',
+            'codigo' => 05,
+        ]);
+
+        DB::table('ubicacions')->insert([     
+            'dependenciamunicipal' => 'Secretaría Comunal de Planificación y coordinación',
+            'codigo' => 06,
+        ]);
+
+    }
+}

@@ -1,0 +1,23 @@
+<?php
+
+use Illuminate\Database\Seeder;
+
+class DatabaseSeeder extends Seeder
+{
+
+//  ------------- Movimientos -------------
+
+       DB::table('movimientos')->insert([
+            'nombre' => 'alta',
+        ]);
+
+       DB::table('movimientos')->insert([
+            'nombre' => 'baja',
+        ]);
+
+       DB::table('movimientos')->insert([
+            'nombre' => 'traslado',
+        ]);
+
+    }
+}
